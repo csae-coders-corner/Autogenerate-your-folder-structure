@@ -60,10 +60,10 @@ foreach newfolder in "$data/" "$data/interim" "$data/processed" "$docs"         
 
 ## R
 
-# Storing the working directory
+### Storing the working directory
 location=getwd()
 
-# Creating folders 
+### Creating folders 
 dir.create(file.path(location,”data”))
 dir.create(file.path(location,”data/interim”))
 dir.create(file.path(location,”data/processed”))
