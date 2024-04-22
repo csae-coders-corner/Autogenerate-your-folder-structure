@@ -1,5 +1,7 @@
-# Autogenerate-your-folder-structure
 
+![CC Graphics 2024_Folderstructure](https://github.com/csae-coders-corner/Autogenerate-your-folder-structure/assets/148211163/43e0c480-35b1-4a68-bd97-d3a34b7b151f)
+
+# Autogenerate-your-folder-structure
 For multi-year, multi-analysts/RA/PIs projects, it is very important to keep a clean and organized folder structure. There are a few resources out there to organize and maintain a sound folder structure that will make sense years down the line (see Gentzkow and Shapiro, 2014). However, it can be quite tedious to manually create all these folders. This post is designed as one to copy-paste whenever you start a new project. However, before I get to the code, I start with a quick description of good practices when it comes to maintaining a good structure for your data work.
 
 It is good practice to have a master script that call all your relevant scripts. For quality assurance purposes: 
