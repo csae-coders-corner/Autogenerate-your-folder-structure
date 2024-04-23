@@ -31,15 +31,17 @@ Once you have chosen the structure you prefer, you can then move on to editing t
 
 If you want to create your folders in your current working directory use the global below, otherwise, just replace `c(pwd)' with the path you would like to create it in. 
 
-### Code
-* Setting up paths
+### Setting up paths
+```
 global wd   `c(pwd)' 
 global data $wd/data
 global docs $wd/docs
 global logs $wd/logs
 global output $wd/output
+```
 
-* Creating folders
+### Creating folders
+```
 ! mkdir "$data/"
 ! mkdir "$data/interim"
 ! mkdir "$data/processed"
@@ -49,16 +51,19 @@ global output $wd/output
 ! mkdir "$output/plots"
 ! mkdir "$output/reports"
 ! mkdir "$output/tables"
+```
 
 ###  Data structure generated
 ![folders 3](https://github.com/csae-coders-corner/Autogenerate-your-folder-structure/assets/148211163/d6e96706-08da-4bed-8171-e8e070976f4d)
 
 The same result could be achieved by doing the following: 
 
-* Creating folders
+Creating folders
+```
 foreach newfolder in "$data/" "$data/interim" "$data/processed" "$docs"               "$logs" "$output" "$output/plots" "$output/reports" "$output/tables" {
 	! mkdir `newfolder’
 }
+```
 
 ## R
 
