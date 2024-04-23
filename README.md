@@ -68,9 +68,12 @@ foreach newfolder in "$data/" "$data/interim" "$data/processed" "$docs"         
 ## R
 
 ### Storing the working directory
+```
 location=getwd()
+```
 
 ### Creating folders 
+```
 dir.create(file.path(location,”data”))
 dir.create(file.path(location,”data/interim”))
 dir.create(file.path(location,”data/processed”))
@@ -80,6 +83,7 @@ dir.create(file.path(location,”output”))
 dir.create(file.path(location,”output/plots”))
 dir.create(file.path(location,”output/reports”))
 dir.create(file.path(location,”output/tables”))
+```
 
 ## References
 
